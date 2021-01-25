@@ -1,5 +1,7 @@
  图片转字符画
 
+公众号原文阅读: [Python实现绘制圣诞树](https://mp.weixin.qq.com/s?__biz=MzkyMjE4NTA4OQ==&mid=2247484073&idx=1&sn=f0d0020eaa655ecf5ba5a29e844ea5f0&chksm=c1f97e47f68ef7517479c2353ca4a47424b0a5437e0a3ad9250fbf2d6f765d0ea91f5b795a5c&token=1665462260&lang=zh_CN#rd)
+
 **面向人群**: 零基础或者初学者
 
 **难度**: 简单， 属于Python基础课程

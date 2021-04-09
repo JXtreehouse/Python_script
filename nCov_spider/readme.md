@@ -1,6 +1,6 @@
 - 2020 冠状病毒疫情爬虫
 - 疫情数据可视化
-
+https://github.com/junguoguo/ncov_2019_spider/blob/master/util/db_util.py
 # 技术栈
 - mongodb 用于存储采集数据
 - mysql 5.7 用于存储从mogodb采集的数据

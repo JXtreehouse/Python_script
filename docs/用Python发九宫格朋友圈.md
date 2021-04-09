@@ -1,4 +1,9 @@
-先来看下原图与最终效果图
+
+![](../img/python发九宫格.png)
+
+
+<b>先来看下原图与最终效果图</b>
+
 ![](../img/鬼刀.png)
 ![](../img/效果图.png)
 
@@ -100,3 +105,4 @@ if __name__ == '__main__':
 ```
 
 # 源码下载地址
+https://github.com/JXtreehouse/Python_script/blob/backup/postWechat.py

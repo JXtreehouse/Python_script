@@ -1,11 +1,14 @@
+#! https://zhuanlan.zhihu.com/p/367627368
+用Python发九宫格朋友圈
+---------
 
-![](../img/python发九宫格.png)
 
-
+![Image](https://pic4.zhimg.com/80/v2-6655133dd9d9dd06b2e89f24e29b6e11.png)
 <b>先来看下原图与最终效果图</b>
 
-![](../img/鬼刀.png)
-![](../img/效果图.png)
+![Image](https://pic4.zhimg.com/80/v2-c657a99cec79712f6aee5f1a7e3f2832.png)
+
+![Image](https://pic4.zhimg.com/80/v2-7078e8b113f9de54d9734da233b8a4e7.png)
 
 # 首先安装Pillow库
 终端运行命令：
@@ -14,7 +17,9 @@ pip3 install pillow
 ```
 
 # 实现思路
-![](../img/实现思路.png)
+
+
+![Image](https://pic4.zhimg.com/80/v2-d48c6d7d1d879a1691d01ea661a862d3.png)
 
 
 # 代码实现

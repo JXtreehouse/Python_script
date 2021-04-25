@@ -277,3 +277,6 @@ encryptYorN(fn_protected )
 # decrypt( )执行解密
 对于加密的PDF文件，我们可以使用decrypt( )执行解密，如果解密成功decrypt( )会传回1，如果失败则传回0。
 ![](../img/解密.png)
+
+# 联系我们
+![](../img/wechat.png)

@@ -18,6 +18,6 @@ python基础课程实例
 | 6 | [pdf_write.py.py](https://github.com/JXtreehouse/Python_script/blob/main/pdf_write.py)|[【Python教程】PyPDF2处理PDF文件](https://mp.weixin.qq.com/s?__biz=MzkyMjE4NTA4OQ==&mid=2247483781&idx=1&sn=1c047575b2cf9b9b3f470fa5b23aad67&chksm=c1f97d6bf68ef47d4cfd07fa06de1f8e45e942853488a2212b2fc0f86de80530f2e83d204bcd&token=357056644&lang=zh_CN#rd) | 
 | 7 | [maigai.py ](https://github.com/AlexZ33/Python_data/blob/main/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E6%BC%AB%E6%B8%B8/maigai.py)|[数据可视化- 利用jieba进行中文分词制作词云](https://mp.weixin.qq.com/s?__biz=MzkyMjE4NTA4OQ==&mid=2247484792&idx=2&sn=8289c52b648c5459d2fff1698d005491&chksm=c1f97996f68ef080c87acb1555ea84542de9445a8e34abf7d1f7c4977483e8a53c422db88904&token=357056644&lang=zh_CN#rd) | 
 |8|create_dir_if_not_exits.py|检查用户主目录中是否存在目录。 如果目录不存在，则将创建一个目录|
-|9| | |
+|9| translate_to_pinyin.py| [Python读取word文本并将中文翻译成拼音](https://zhuanlan.zhihu.com/p/368053324)|
 # 参考书
 [Python最佳实践指南](https://pythonguidecn.readthedocs.io/zh/latest/)

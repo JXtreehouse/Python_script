@@ -16,6 +16,8 @@
 # Python_script
 python基础课程实例
 
+请关注： 微信公众号-柚子编程俱乐部
+
 | 项目 | 源码 | 文章讲解 |
 | :-----| ----: | :----: |
 | 1| [convertImgSize.py](https://github.com/JXtreehouse/Python_script/blob/main/convertImgSize.py) | [Python批量修改图片尺寸](https://www.toutiao.com/a6924638337550615053/?log_from=f9083f8c6e089_1634279427147) |

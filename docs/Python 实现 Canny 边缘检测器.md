@@ -23,5 +23,7 @@
 
 # References
 - Canny Edge Detection Tutorial by Bill Green, 2002.
+- [opencv docs Canny Edge Detection](https://docs.opencv.org/3.1.0/da/d22/tutorial_py_canny.html)
+- [implement-canny-edge-detector-in-python-using-opencv](https://www.geeksforgeeks.org/implement-canny-edge-detector-in-python-using-opencv/?ref=lbp)
 
 # Better Example

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-04-25 09:50:02
- * @LastEditTime: 2022-11-07 14:03:53
+ * @LastEditTime: 2022-11-07 15:03:50
  * @LastEditors: AlexZ33 775136985@qq.com
  * @Description: In User Settings Edit
  * @FilePath: /Python_script/README.md
@@ -36,6 +36,42 @@ python基础课程实例
 |8|create_dir_if_not_exits.py|检查用户主目录中是否存在目录。 如果目录不存在，则将创建一个目录|
 |9| [translate_to_pinyin.py](https://github.com/JXtreehouse/Python_script/blob/main/translate_to_pinyin.py)| [Python读取word文本并将中文翻译成拼音](https://mp.weixin.qq.com/s?__biz=Mzg4MDY5NDU4NQ==&mid=2247483729&idx=5&sn=5c0229d3598c9ac743f14f43e919282a&chksm=cf700507f8078c11c22b3441c4cd179fe0a7608284bf10901194e38e298d51362483bc057ea9&token=2114784969&lang=zh_CN#rd)|
 |10|[edges_detected.py]() |[边缘检测 - use Laplace(拉普拉斯)算子](https://mp.weixin.qq.com/s?__biz=Mzg4MDY5NDU4NQ==&mid=2247485726&idx=1&sn=22a5d34f2a3b0879c8dfb8fafdfa3764&chksm=cf700d48f807845e3b15d728af8ca44b92a0bd59329681e5a738855d2673e84eabe4f14da759&token=2114784969&lang=zh_CN#rd)|
+
+# develop
+
+use Python Virtual Environment
+
+```
+# install 
+pip install virtualenv
+
+# test your installation
+virtualenv  --version
+
+# you can create a virtualenv using the following command
+virtualenv my_name
+
+# After running this command, a directory named my_name will be created. This is the directory which contains all the necessary executables to use the packages that a Python project would need. This is where Python packages will be installed. If you want to specify Python interpreter of your choice, for example Python 3, it can be done using the following command:
+
+$ virtualenv -p /usr/bin/python3 virtualenv_name
+
+# To create a Python 2.7 virtual environment, use the following command:
+
+$ virtualenv -p /usr/bin/python2.7 virtualenv_name
+
+# Note: source is a shell command designed for users running on Linux (or any Posix, but whatever, not Windows).
+# To activate virtual environment using windows command prompt  change directory to your virtual env
+
+# windows
+$ cd <envname>
+$ scripts/activate 
+
+# linux/posix
+$ source virtualenv_name/bin/activate
+
+
+```
+ 
 # 参考书
 [Python最佳实践指南](https://pythonguidecn.readthedocs.io/zh/latest/)
 

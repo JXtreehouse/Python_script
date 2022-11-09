@@ -34,12 +34,12 @@ OpenCV 是用于计算机视觉、机器学习和图像处理的庞大开源库�
 ![](../img/slidingwindow.gif)
 
 在实践中，主流的目标检测算法有两种:
-# Two stage目标检测算法
+## Two stage目标检测算法
 > 首先识别预计会找到对象的区域，然后使用卷积网络仅在这些区域中检测对象。
 - 先进行区域生成（region proposal,RP）(一个可能包含待检测物体的预选框)，再通过卷积神经网络进行样本分类。
 - 任务：特征提取->生成RP->分类/定位回归。
 - 常见Two stage目标检测算法有:R-CNN、SPP-Net、Fast R-CNN和R-FCN等。
-# One stage 目标检测算法
+##  One stage 目标检测算法
 
 > 另一方面，像 YOLO（You Only Look Once）[1] 和 SSD（Single-Shot Detector）[2] 等算法使用完全卷积的方法，其中网络能够一次找到图像中的所有对象（ 因此通过卷积网络“单次拍摄”或“看一次”
 - 不用RP，直接在网络中提取特征来预测物体分类和位置。
@@ -49,8 +49,108 @@ OpenCV 是用于计算机视觉、机器学习和图像处理的庞大开源库�
 ![](../img/object_detection_img.png)
 
 # Haar Cascades
+Opening an image
+```python
+import cv2
+from matplotlib import pyplot as plt
 
 
+# Opening image
+img = cv2.imread("image.jpg")
+
+# OpenCV opens images as BRG
+# but we want it as RGB and
+# we also need a grayscale
+# version
+img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+# Creates the environment
+# of the picture and shows it
+plt.subplot(1, 1, 1)
+plt.imshow(img_rgb)
+plt.show()
+
+```
+
+![](../img/stop1.png)
+
+Recognition
+我们将使用 OpenCV 的 detectMultiScale() 函数来识别大符号和小符号：
+
+```python
+# Use minSize because for not 
+# bothering with extra-small 
+# dots that would look like STOP signs
+found = stop_data.detectMultiScale(img_gray, 
+                                   minSize =(20, 20))
+  
+# Don't do anything if there's 
+# no sign
+amount_found = len(found)
+  
+  
+if amount_found != 0:
+      
+    # There may be more than one
+    # sign in the image
+    for (x, y, width, height) in found:
+          
+        # We draw a green rectangle around
+        # every recognized sign
+        cv2.rectangle(img_rgb, (x, y), 
+                      (x + height, y + width), 
+                      (0, 255, 0), 5)
+```
+
+
+```python
+import cv2
+from matplotlib import pyplot as plt
+
+# Opening image
+img = cv2.imread("image.jpg")
+
+# OpenCV opens images as BRG
+# but we want it as RGB We'll
+# also need a grayscale version
+img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+
+# Use minSize because for not
+# bothering with extra-small
+# dots that would look like STOP signs
+stop_data = cv2.CascadeClassifier('stop_data.xml')
+
+found = stop_data.detectMultiScale(img_gray,
+								minSize =(20, 20))
+
+# Don't do anything if there's
+# no sign
+amount_found = len(found)
+
+if amount_found != 0:
+	
+	# There may be more than one
+	# sign in the image
+	for (x, y, width, height) in found:
+		
+		# We draw a green rectangle around
+		# every recognized sign
+		cv2.rectangle(img_rgb, (x, y),
+					(x + height, y + width),
+					(0, 255, 0), 5)
+		
+# Creates the environment of
+# the picture and shows it
+plt.subplot(1, 1, 1)
+plt.imshow(img_rgb)
+plt.show()
+
+```
+
+![](../img/stop.png)
 <br></br>
 
 **ps: 我们假设您对卷积神经网络 (CNN) 概念有一些基本了解。 您可以通过阅读这篇简短的论文“深度学习卷积算法指南”来更新您的 CNN 知识**
@@ -73,4 +173,5 @@ RetinaNet 是最好的单阶段目标检测模型之一，已被证明可以很�
   - PPT : http://www.cs.unc.edu/~wliu/papers/ssd_eccv2016_slide.pdf
 - [RetinaNet/ Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002)
   - code : https://github.com/facebookresearch/Detectron
-  - 
+
+- [opencv cascade classifier training](https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html)

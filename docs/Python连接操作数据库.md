@@ -7,6 +7,18 @@
  * @Description: In User Settings Edit
  * @FilePath: /Python_script/docs/Python连接操作数据库.md
 -->
+
+<!-- TOC -->
+* [Python连接操作数据库](#python)
+* [mysql](#mysql)
+  * [更新数据库insert/update/delete](#insertupdatedelete)
+* [mysql-connector](#mysql-connector)
+  * [1、作用](#1)
+  * [2、示例](#2)
+* [示例](#)
+* [注意点](#)
+* [参考](#)
+<!-- TOC -->
 # Python连接操作数据库
 # mysql
  python3中用`pymysql`操作mysql数据库

@@ -8,6 +8,16 @@
  * @FilePath: /Python_script/docs/Python读取word文本并将中文翻译成拼音.md
 -->
 
+<!-- TOC -->
+* [需求背景](#)
+* [使用python-docx读取word文本](#python-docxword)
+* [使用pypinyin中文转拼音](#pypinyin)
+  * [基本拼音](#)
+  * [风格转换](#)
+* [代码](#)
+* [结语](#)
+<!-- TOC -->
+
 # 需求背景
 不知到大家最近有没刷剧，鲸鱼最近刷了部剧叫《小舍得》，里面各种家庭伦理大剧, 剧情之狗血让人无力吐槽。
 

@@ -77,5 +77,6 @@ $ source virtualenv_name/bin/activate
 # 参考书
 - [Python最佳实践指南](https://pythonguidecn.readthedocs.io/zh/latest/)
 - [人工智能（AI）方面的课程的翻译、笔记分享](http://www.ai-start.com/)
-
+- [https://www.remove.bg/]()
+- https://booltool.boolv.tech/home
 

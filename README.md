@@ -79,4 +79,7 @@ $ source virtualenv_name/bin/activate
 - [人工智能（AI）方面的课程的翻译、笔记分享](http://www.ai-start.com/)
 - [https://www.remove.bg/]()
 - https://booltool.boolv.tech/home
-
+- [程序员数学- 用Python学透线性代数和微积分](https://weread.qq.com/web/bookDetail/818320a0728a4acc8189214)
+  - https://github.com/orlandpm/Math-for-Programmers/tree/master
+- [统计思维: 程序员数学之概率统计(第2版)](https://weread.qq.com/web/bookDetail/320326d0718ff6743207f2a)
+- 
